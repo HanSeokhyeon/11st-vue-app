@@ -9,6 +9,7 @@
     <time-deal></time-deal>
     <airlift></airlift>
     <plan-banner></plan-banner>
+    <wide-banner></wide-banner>
   </div>
 </template>
 
@@ -22,6 +23,7 @@ import HotFocus from "./components/HotFocus";
 import TimeDeal from "./components/TimeDeal";
 import Airlift from "./components/Airlift";
 import PlanBanner from "./components/PlanBanner";
+import WideBanner from "./components/WideBanner";
 
 export default {
   components: {
@@ -33,7 +35,8 @@ export default {
     HotFocus,
     TimeDeal,
     Airlift,
-    PlanBanner
+    PlanBanner,
+    WideBanner
   }
 }
 </script>
