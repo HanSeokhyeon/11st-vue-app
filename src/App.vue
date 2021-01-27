@@ -8,6 +8,7 @@
     <hot-focus></hot-focus>
     <time-deal></time-deal>
     <airlift></airlift>
+    <plan-banner></plan-banner>
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import Direct from "./components/Direct";
 import HotFocus from "./components/HotFocus";
 import TimeDeal from "./components/TimeDeal";
 import Airlift from "./components/Airlift";
+import PlanBanner from "./components/PlanBanner";
 
 export default {
   components: {
@@ -30,7 +32,8 @@ export default {
     Direct,
     HotFocus,
     TimeDeal,
-    Airlift
+    Airlift,
+    PlanBanner
   }
 }
 </script>
