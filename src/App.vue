@@ -10,6 +10,8 @@
     <airlift></airlift>
     <plan-banner></plan-banner>
     <wide-banner></wide-banner>
+    <best-product></best-product>
+    <todays-chance></todays-chance>
   </div>
 </template>
 
@@ -24,6 +26,8 @@ import TimeDeal from "./components/TimeDeal";
 import Airlift from "./components/Airlift";
 import PlanBanner from "./components/PlanBanner";
 import WideBanner from "./components/WideBanner";
+import BestProduct from "./components/BestProduct";
+import TodaysChance from "./components/TodaysChance";
 
 export default {
   components: {
@@ -36,7 +40,9 @@ export default {
     TimeDeal,
     Airlift,
     PlanBanner,
-    WideBanner
+    WideBanner,
+    BestProduct,
+    TodaysChance
   }
 }
 </script>
