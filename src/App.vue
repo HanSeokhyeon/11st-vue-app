@@ -12,6 +12,10 @@
     <wide-banner></wide-banner>
     <best-product></best-product>
     <todays-chance></todays-chance>
+    <promotion></promotion>
+    <mds-recommendation></mds-recommendation>
+    <partner></partner>
+    <my-footer></my-footer>
   </div>
 </template>
 
@@ -28,6 +32,10 @@ import PlanBanner from "./components/PlanBanner";
 import WideBanner from "./components/WideBanner";
 import BestProduct from "./components/BestProduct";
 import TodaysChance from "./components/TodaysChance";
+import Promotion from "./components/Promotion";
+import MdsRecommendation from "./components/MdsRecommendation";
+import Partner from "./components/Partner";
+import MyFooter from "./components/MyFooter"
 
 export default {
   components: {
@@ -42,7 +50,11 @@ export default {
     PlanBanner,
     WideBanner,
     BestProduct,
-    TodaysChance
+    TodaysChance,
+    Promotion,
+    MdsRecommendation,
+    Partner,
+    MyFooter
   }
 }
 </script>
