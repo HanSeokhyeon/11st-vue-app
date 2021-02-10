@@ -3,6 +3,7 @@
     <l-n-b></l-n-b>
     <my-header></my-header>
     <billboard></billboard>
+    <!--전역 배너는 헤더의 다음이나 푸터의 다음이 적당합니다.-->
     <global-banner></global-banner>
     <direct></direct>
     <hot-focus></hot-focus>
@@ -20,6 +21,10 @@
 </template>
 
 <script>
+// 전체 JS에서 큰 따옴표나 작은 따옴표 중 하나만 사용하는 것이 좋아요~
+// 세미콜론 마무리도 같습니다.
+// 강의에서는 말씀드린 대로 ESLint에 JS 관련 린트는 따로 설정하지 않았지만,
+// 되도록 설정하는 것이 좋겠죠?!
 import LNB from "./components/LNB";
 import MyHeader from "./components/MyHeader";
 import Billboard from "./components/Billboard";
@@ -60,5 +65,7 @@ export default {
 </script>
 
 <style lang="scss">
+  // 프론트엔드의 모듈 기반으로 개발 환경의 경우,
+  // 명시적인 상대 경로 표시(./)가 없으면 하나의 모듈로 읽힐 수 있어요.
   @import "scss/main";
 </style>

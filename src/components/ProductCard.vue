@@ -56,7 +56,7 @@
         <div
           v-if="product.options.accumulation"
           class="accumulation">
-          <span v-html="product.options.accumulation"></span>
+          ㆍ<span v-html="product.options.accumulation"></span>
         </div>
         <span class="flex-space"></span>
         <div
@@ -89,7 +89,7 @@
 
 <script>
 import numeral from 'numeral'
-import _kebabcase from 'lodash/kebabCase'
+import _kebabCase from 'lodash/kebabCase'
 
 export default {
   props: {
@@ -116,8 +116,8 @@ export default {
     this.loadImage()
   },
   methods: {
-    kebabcase (str) {
-      return _kebabcase(str)
+    kebabCase (str) {
+      return _kebabCase(str)
     },
     addComma (num) {
       return numeral(num).format('0,0')
