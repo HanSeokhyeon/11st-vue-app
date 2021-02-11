@@ -1,7 +1,7 @@
 <template>
   <section
-    ref="lazyLoadElement"
-    class="wide-banner">
+    class="wide-banner"
+    ref="lazyLoadElement">
     <div class="inner"></div>
   </section>
 </template>

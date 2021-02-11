@@ -71,7 +71,6 @@
                 v-for="(rank, index) in filteredRankings"
                 :key="rank.name">
                 <a :href="rank.href">
-                  <!--제가 실수한 부분인데 수정해서 구현하셨네요! 멋져요~-->
                   <span class="index">{{ tabIndex * 10 + index + 1 }}</span>
                   <span class="name">{{ rank.name }}</span>
                   <span class="relative-name">{{ rank.relativeName }}</span>

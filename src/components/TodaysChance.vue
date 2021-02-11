@@ -1,5 +1,5 @@
 <template>
-  <section class="todays-chance">
+  <section class="time-deal">
     <div
       ref="lazyLoadElement"
       class="inner">
