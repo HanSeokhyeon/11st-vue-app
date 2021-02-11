@@ -12,11 +12,10 @@
       </div>
       <div
         ref="container"
-        class="container">
+        class="container"
+        @mouseleave="categoryHover = -1">
         <!--GROUP-->
-        <div
-          class="group categories"
-          @mouseleave="categoryHover = -1">
+        <div class="group categories">
           <h3 class="group__title">
             {{ navigations.categories.title }}
           </h3>
@@ -41,7 +40,9 @@
           </ul>
         </div>
         <!--GROUP-->
-        <div class="group major-services">
+        <div
+          class="group major-services"
+          @mouseenter="categoryHover = -1">
           <div class="group__title">
             {{ navigations.majorServices.title }}
           </div>
@@ -58,7 +59,8 @@
         <!--GROUP-->
         <div
           ref="outlets"
-          class="group outlets">
+          class="group outlets"
+          @mouseenter="categoryHover = -1">
           <div
             class="group__title"
             @click="toggleGroup('outlets')">
@@ -84,7 +86,8 @@
         <!--GROUP-->
         <div
           ref="partners"
-          class="group partners">
+          class="group partners"
+          @mouseenter="categoryHover = -1">
           <div
             class="group__title"
             @click="toggleGroup('partners')">
@@ -110,7 +113,8 @@
         <!--GROUP-->
         <div
           ref="brandMall"
-          class="group brand-mall">
+          class="group brand-mall"
+          @mouseenter="categoryHover = -1">
           <div
             class="group__title"
             @click="toggleGroup('brandMall')">
@@ -195,7 +199,7 @@ export default {
       // isShow + Outlets
       if (this.$data[computedName]) {
         this.$nextTick(() => {
-          this.$refs.container.scrollTo(0, this.$refs.outlets.offsetTop - 75)
+          this.$refs.container.scrollTo(0, this.$refs[name].offsetTop - 75)
         })
       }
     }

@@ -30,6 +30,9 @@
 <script>
 import Swiper from 'swiper/bundle'
 import 'swiper/swiper-bundle.css'
+// 현재 컴포넌트와 찾는 컴포넌트가 같이 이동할 수 있는 경우는 괜찮지만,
+// 그렇지 않은 환경에선 파일 이동으로 인해 앱의 많은 부분이 무너질 수 있습니다.
+// 컴포넌트를 찾을 때는 경로 별칭을 사용하는 것이 더 권장됩니다~
 import ProductCard from "./ProductCard";
 
 export default {
